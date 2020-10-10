@@ -3,4 +3,10 @@ sudo: false
 python:
 - 2.7
 - 3.4
+- 3.8
+env:
+- remote=1
+before_script:
+- export remote=1
+- echo Variable remote = $REMOTE
 script: py.test -v
